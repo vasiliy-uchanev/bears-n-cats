@@ -8,7 +8,7 @@ class BillContainer extends Component {
 
     render() {
       return (
-        <div class="container bill-container">
+        <div className="container bill-container">
             <PlaceholderContainer width={this.props.width} height={this.props.height} placeholderProviderUrl="http://fillmurray.com"/>
         </div>
       );

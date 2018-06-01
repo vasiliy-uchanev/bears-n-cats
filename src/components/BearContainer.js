@@ -8,7 +8,7 @@ class BearContainer extends Component {
 
     render() {
       return (
-        <div class="container bear-container">
+        <div className="container bear-container">
             <PlaceholderContainer width={this.props.width} height={this.props.height} placeholderProviderUrl="http://placebear.com"/>
         </div>
       );

@@ -8,7 +8,7 @@ class CatContainer extends Component {
 
     render() {
       return (
-        <div class="container cat-container">
+        <div className="container cat-container">
           <PlaceholderContainer width={this.props.width} height={this.props.height} placeholderProviderUrl="http://placekitten.com"/>
         </div>
       );

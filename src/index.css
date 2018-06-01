@@ -7,6 +7,7 @@ body {
 div .container {
   display: inline-block;
   border-style: solid;
+  margin: 20px;
 }
 
 div .cat-container {
@@ -19,4 +20,21 @@ div .bear-container {
 
 div .bill-container {
   border-color: #ff0000;
+}
+
+.ad-container > span {
+  display: inline;
+}
+
+.ad-container {
+  border-style: solid;
+  border-color: gray;
+  background-color: beige;
+  margin: 20px;
+}
+
+div .ad-text {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px; 
 }
