@@ -4,8 +4,19 @@ body {
   font-family: sans-serif;
 }
 
-div .placeholder-container {
-  float: left;
+div .container {
+  display: inline-block;
   border-style: solid;
-  border-color: red;
+}
+
+div .cat-container {
+  border-color: #ff00ff;
+}
+
+div .bear-container {
+  border-color: #00ffff;
+}
+
+div .bill-container {
+  border-color: #ff0000;
 }

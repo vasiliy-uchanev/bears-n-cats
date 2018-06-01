@@ -8,7 +8,7 @@ class PlaceholderContainer extends Component {
     render() {
         return (
             <div className="placeholder-container" style={{height: this.props.height + 'px', width: this.props.width + 'px'}}>
-                <img src={"http://placebear.com/" + this.props.width + "/" + this.props.height}/>
+                <img src={this.props.placeholderProviderUrl+ "/" + this.props.width + "/" + this.props.height}/>
             </div>
         );
     }

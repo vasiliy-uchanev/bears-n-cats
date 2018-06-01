@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
-import PlaceholderContainer from './PlaceholderContainer.js';
+import CatContainer from './CatContainer.js'
+import BearContainer from './BearContainer.js'
+import BillContainer from './BillContainer.js'
 
 class App extends Component {
     render() {
       return (
         <div className="App">
-          <PlaceholderContainer width="300" height="200"/>
-          <PlaceholderContainer width="200" height="200"/>
-          <PlaceholderContainer width="300" height="100"/>
-          <PlaceholderContainer width="100" height="100"/>
-          <PlaceholderContainer width="400" height="200"/>
-          <PlaceholderContainer width="300" height="300"/>
-          <PlaceholderContainer width="128" height="250"/>
+          <CatContainer width="300" height="200"/>
+          <CatContainer width="200" height="200"/>
+          <CatContainer width="300" height="100"/>
+
+          <BearContainer width="300" height="200"/>
+          <BearContainer width="200" height="200"/>
+          <BearContainer width="300" height="100"/>
+
+          <BillContainer width="300" height="200"/>
+          <BillContainer width="200" height="200"/>
+          <BillContainer width="300" height="100"/>
         </div>
       );
     }
