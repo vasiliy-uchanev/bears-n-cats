@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
-import Ad from './Ad.js';
+import AdBoard from './AdBoard.js';
 
 class App extends Component {
-    render() {
-      return (
-        <div className="App">
-          <Ad adHeader="Selling Bills!" adText="REALLY CHEAP!" adType="bill"/>
-          <Ad adHeader="Selling Bears!" adText="BROWN! AND WHITE!! SOME GRIZZLY BEARS TOO!" adType="bear"/>
-          <Ad adHeader="Selling Cats!" adText="FURRY!!" adType="cat"/>
-        </div>
-      );
-    }
+  render() {
+    const initialAds = [
+      { type: "bill", header: "Selling Bills!", text: "REALLY CHEAP!" },
+      { type: "bear", header: "Selling Bears!", text: "BROWN! AND WHITE!! SOME GRIZZLY BEARS TOO!" },
+      { type: "cat", header: "Selling Cats!", text: "FURRY!!" },
+    ]
+    return (
+      <div className="App">
+        <AdBoard ads={initialAds} />
+      </div>
+    );
+  }
 }
 
 export default App;

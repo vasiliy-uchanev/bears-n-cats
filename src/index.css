@@ -38,3 +38,22 @@ div .ad-text {
   vertical-align: top;
   margin-top: 20px; 
 }
+
+#root {
+  background-color: midnightblue;
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0
+}
+
+.ad-board-header{
+  border-style: solid;
+  border-color: gray;
+  background-color: beige;
+  margin: 20px;
+  padding: 0px 0px 0px 20px;
+}
