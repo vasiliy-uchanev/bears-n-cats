@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import Ad from './Ad.js'
 import Modal from './Modal.js'
+import AddAd from './AddAd.js'
 
 class AdBoard extends Component {
   constructor(props) {
     super(props);
     this.state = { ads: this.props.ads, adAddModalShown: false };
     this.onAdDestroy = this.onAdDestroy.bind(this);
+    this.onSaveAd = this.onSaveAd.bind(this);
   }
 
   onAdDestroy(index) {
@@ -16,12 +18,10 @@ class AdBoard extends Component {
     });
   }
 
-  handleAddAdClick = () => {
-    this.state.ads.push({ type: "cat", header: "I AM COMPLETELY NEW!!!", text: "WAS ADDED BY BUTTON CLICK!!!" });
-    this.setState({
-      ads: this.state.ads
-    });
+  onSaveAd(newAd) {
+    this.state.ads.push({ type: newAd.type, header: newAd.header, text: newAd.text})
   }
+
   toggleModal = () => {
     this.setState({
       adAddModalShown: !this.state.adAddModalShown
@@ -47,7 +47,7 @@ class AdBoard extends Component {
         </div>
 
         <Modal show={this.state.adAddModalShown} onClose={this.toggleModal}>
-          Here's some content for the modal
+          <AddAd saveNewAd={this.onSaveAd} onClose={this.toggleModal}/>
         </Modal>
       </div>
     );
